@@ -16,6 +16,7 @@ angular.module('app', ['ionic', 'ngCordova', 'app.controllers', 'app.routes', 'a
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
 
+        //Adds listener to start WI-FI upload
         $rootScope.$on('$cordovaNetwork:online', function (event, networkState) {
             console.log("online")
             if ($cordovaNetwork.getNetwork() == Connection.WIFI) {
@@ -33,6 +34,10 @@ angular.module('app', ['ionic', 'ngCordova', 'app.controllers', 'app.routes', 'a
         })
         
         
+        //Locks screen orientation
+        screen.lockOrientation('portrait');
+        
+        //Starts analytics
         if(analytics != undefined) {
                 analytics.startTrackerWithId("UA-72647228-1");
             } else {

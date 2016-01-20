@@ -42,6 +42,9 @@
         },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
         }
     },
     "dependent_plugins": {

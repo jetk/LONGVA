@@ -51,6 +51,10 @@
                         {
                             "xml": "<feature name=\"Media\"><param name=\"android-package\" value=\"org.apache.cordova.media.AudioHandler\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"android-package\" value=\"net.yoik.cordova.plugins.screenorientation.YoikScreenOrientation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -191,6 +195,9 @@
             "PACKAGE_NAME": "com.ionicframework.alpha540629"
         },
         "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-screen-orientation": {
             "PACKAGE_NAME": "com.ionicframework.alpha540629"
         }
     },
@@ -485,6 +492,22 @@
             "clobbers": [
                 "window.Media"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+            "id": "cordova-plugin-screen-orientation.screenorientation",
+            "pluginId": "cordova-plugin-screen-orientation",
+            "clobbers": [
+                "cordova.plugins.screenorientation"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.android.js",
+            "id": "cordova-plugin-screen-orientation.screenorientation.android",
+            "pluginId": "cordova-plugin-screen-orientation",
+            "merges": [
+                "cordova.plugins.screenorientation"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -500,6 +523,7 @@
         "cordova-plugin-network-information": "1.1.0",
         "cordova-plugin-file-transfer": "1.4.0",
         "cordova-plugin-google-analytics": "0.8.1",
-        "cordova-plugin-media": "1.0.1"
+        "cordova-plugin-media": "1.0.1",
+        "cordova-plugin-screen-orientation": "1.4.0"
     }
 }

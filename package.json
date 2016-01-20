@@ -35,7 +35,8 @@
     {
       "locator": "https://github.com/xavierdcruz0/cordova-plugin-media.git",
       "id": "cordova-plugin-media"
-    }
+    },
+    "net.yoik.cordova.plugins.screenorientation"
   ],
   "cordovaPlatforms": [
     "android"

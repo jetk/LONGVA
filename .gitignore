@@ -1,4 +1,8 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
+<<<<<<< HEAD:.gitignore
 
+=======
+platforms/
+>>>>>>> 4779c4471cf72475bd99d4c1d03314056a1a7b7a:LongVA/.gitignore
