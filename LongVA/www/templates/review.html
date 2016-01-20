@@ -1,0 +1,14 @@
+<ion-view title="REVIEW">
+    <ion-content padding="'true'" style="background: url(img/background.jpg) no-repeat center;" class="has-header">
+        <h3>Thanks for making recording no.{{session_number}}! Feel free to review your answers and hit UPLOAD when ready</h3>
+        <ul>
+            <li ng-repeat="item in quests" ng-if="$index > 0">
+                <div>
+                    <button class="button button-stable button-outline button-large button-full" ng-click="reviewquestions({{item.Q_Number}});">{{item.Q_Short}}</button>
+                </div>
+            </li>
+        </ul>
+        <button class="button button-stable button-large button-full" ng-click="analytics();">UPLOAD</button>
+        
+    </ion-content>
+</ion-view>

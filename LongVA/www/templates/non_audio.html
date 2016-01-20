@@ -1,0 +1,17 @@
+<ion-view title="LAST QUESTIONS">
+    <ion-content padding="'true'" style="background: url(img/background.jpg) no-repeat center;" class="has-header">
+        <h1>Thanks for recording today!</h1>
+        <h3>Before we finish, will you please rate your mood:</h3>
+        <div class="range range-positive">
+            :(
+            <input type="range" name="volume" min="0" max="10" value="{{data.numberSelection}}" ng-model="data.numberSelection">
+            :)
+        </div>
+        <h3>...and leave any other notes on your health and wellbeing:</h3>
+            <label class="item item-input" name="Comments">
+                <span class="input-label"></span><textarea ng-model="data.comments" placeholder=""> </textarea>
+            </label>
+        <button class="button button-stable button-outline button-large button-full" ng-click="reviewandfinalise();">REVIEW AND FINALISE</button>
+        <a
+    </ion-content>
+</ion-view>
