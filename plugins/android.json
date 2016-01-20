@@ -1,0 +1,52 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-registerusernotificationsettings": {
+            "PACKAGE_NAME": "com.ionicframework.alpha540629"
+        }
+    }
+}

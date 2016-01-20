@@ -1,0 +1,42 @@
+<ion-view title="RECORDING SESSION">
+    <ion-content padding="'true'" style="background: url(img/background.jpg) no-repeat center;">
+        <table align="center" style="width:100%">
+            <tr>
+                <td ng-repeat="item in BreadCrumbArray track by $index" ng-if="item == true"><div align="center" class="ion-android-radio-button-on light"></div></td>
+                <td ng-repeat="item in BreadCrumbArray track by $index" ng-if="item == false"><div align="center" class="ion-android-radio-button-off light"></div></td>
+            </tr>
+        </table>
+
+        <div><h1 align="center">{{flavour_text}}: <br />Question {{testvar}}</h1></div>
+        <br />
+        <div><h1 align="center">{{qd.Q_Text}}</h1></div>
+        
+        <!--
+            
+        <audio autoplay><source src="questions/{{qd.Q_Audio}}" type="audio/mp3"></audio>  
+        -->
+        
+        <div>{{qd.Q_Audio}}</div>
+
+        <footer>
+            <div ng-show="show_buttons == true">
+            <table align="center" border="1" width="100%" ID="Table2" style="margin: 0px;">
+                <tr align="center">
+                    <td>
+                        <h5 align="center">Re-Rec</h5>
+                <button class="button button-stable button-outline button-block  icon ion-ios-recording-outline" ng-click="rerecord()"></button>
+                    </td>
+                    <td>
+                        <h5 align="center">Replay</h5>
+                <button class="button button-stable button-outline button-block  icon ion-android-arrow-dropright-circle" ng-click="replay();"></button>
+                    </td>
+                    <td>
+                    <h5 align="center">Done</h5>
+                <button class="button button-stable button-outline button-block  icon ion-arrow-right-a" ng-click="advance();"></button>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </footer>
+    </ion-content>
+</ion-view>

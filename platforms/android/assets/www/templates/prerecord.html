@@ -1,0 +1,35 @@
+<ion-view title="PRE-RECORDING DETAILS">
+    <ion-content padding="'true'" style="background: url(img/background.jpg) no-repeat center;" class="has-header">
+            <h3>Before we begin, would you mind letting us know a few things?</h3>
+        
+            <h4>Are you elsewhere than usual for this recording?</h4>
+            <table style="width:100%">
+                <tr>
+                    <td ng-repeat = "item in yes_no_list">
+                        <ion-radio
+                       ng-value="item.value"
+                       ng-model="data.elsewhere"
+                       name="elsewhere">
+                        {{ item.text }}
+                        </ion-radio>
+                    </td>
+                </tr>
+            </table>
+            <h4>Are you feeling unwell in any way?</h4>
+            <table style="width:100%">
+                <tr>
+                    <td ng-repeat ="item in yes_no_list">
+                        <ion-radio
+                       ng-value="item.value"
+                       ng-model="data.sick"
+                       name="sick">
+                        {{ item.text }}
+                        </ion-radio>
+                    </td>
+                </tr>
+            </table>
+
+            
+            <button class="button button-stable button-block button-full" ng-click="begin()">GO</button>
+    </ion-content>
+</ion-view>

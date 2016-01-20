@@ -1,0 +1,19 @@
+<ion-view title="Settings">
+    <ion-content padding="'true'" style="background: url(img/background.jpg) no-repeat center;" class="has-header">
+        <h1>SIMPLE SETTINGS</h1>
+        <h2>
+            This app will remind you to make two recordings per day. Please select times that work for you.
+        </h2>
+            <label class="item item-input">
+                <span class="input-label">Morning</span>
+                <input type="time" placeholder="HH:mm:ss" ng-model="settings.WDAM">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Evening</span>
+                <input type="time" placeholder="HH:mm:ss" ng-model="settings.WDPM">
+            </label>
+        
+        <button ng-click="save()" class="button button-stable button-outline button-block  button-full">{{button_text}}</button>        
+
+    </ion-content>
+</ion-view>
